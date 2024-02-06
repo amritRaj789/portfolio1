@@ -40,7 +40,32 @@ const shadowHeader = () => {
 window.addEventListener('scroll', shadowHeader);
 
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form');
+const contactMessage = document.getElementById('contact-message');
 
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    // service ID - template ID - #form - publicKey
+    emailjs.sendForm('service_8dihs4e', 'template_xtkqy6h', '#contact-form', 'mIMTIzt1FDg_FP55-')
+    .then(() => {
+        // Show Sent Message
+        contactMessage.textContent = 'Message sent successfully ✅'
+
+        // Remove message after 5 seconds
+        setTimeout(() => {
+            contactMessage.textContent = ''
+        }, 5000)
+
+        // Clear input fields
+        contactForm.reset();
+    }, () => {
+        // Show error message
+        contactMessage.textContent = "Message not sent (Service Error) ❌";
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
