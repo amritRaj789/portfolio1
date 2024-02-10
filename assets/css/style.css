@@ -451,7 +451,7 @@ body.dark-theme{
 }
 
 .home__social{
-    height: max-content;
+    height: fit-content; /* was set to max-content */
     position: absolute;
     left: -3rem;
     top: 0;
@@ -469,6 +469,7 @@ body.dark-theme{
     display: grid;
     place-items: center;
     transition: background-color .3s;
+    height: fit-content; /* was not present */
 }
 
 .home__social-link:hover{
