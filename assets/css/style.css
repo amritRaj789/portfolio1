@@ -451,14 +451,13 @@ body.dark-theme{
 }
 
 .home__social{
-    height: fit-content; /* was set to max-content */
+    height: max-content;
     position: absolute;
     left: -3rem;
     top: 0;
     bottom: 0;
     margin: auto 0;
     display: grid;
-    place-items: center; /* was not present */
     row-gap: 1rem;
 }
 
@@ -470,7 +469,6 @@ body.dark-theme{
     display: grid;
     place-items: center;
     transition: background-color .3s;
-    height: 32px; /* was not present */
 }
 
 .home__social-link:hover{
