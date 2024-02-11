@@ -458,7 +458,7 @@ body.dark-theme{
     bottom: 0;
     margin: auto 0;
     display: grid;
-    row-gap: 6px; /* was set to 1rem */
+    row-gap: 1rem;
 }
 
 .home__social-link{
@@ -469,7 +469,6 @@ body.dark-theme{
     display: grid;
     place-items: center;
     transition: background-color .3s;
-    max-height: 32px; /* was not present, added by me */
 }
 
 .home__social-link:hover{
