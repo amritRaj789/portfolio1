@@ -517,6 +517,7 @@ body.dark-theme{
     cursor: pointer;
     overflow: hidden;
     transition: background-color .4s;
+    border-radius: 0.4rem;
 }
 
 .home__scroll-box i{
