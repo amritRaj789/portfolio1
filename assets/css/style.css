@@ -474,6 +474,7 @@ body.dark-theme{
     display: grid;
     place-items: center;
     transition: background-color .3s;
+    border-radius: 0.4rem;
 }
 
 .home__social-link:hover{
@@ -517,7 +518,7 @@ body.dark-theme{
     cursor: pointer;
     overflow: hidden;
     transition: background-color .4s;
-    border-radius: 0.4rem;
+    border-radius: 0.4rem; /* added by me */
 }
 
 .home__scroll-box i{
@@ -558,6 +559,7 @@ body.dark-theme{
     color: var(--white-color);
     font-weight: var(--font-medium);
     transition: background-color .4s;
+    border-radius: 0.4rem; /* added by me */
 }
 
 .button i{
@@ -573,6 +575,7 @@ body.dark-theme{
     color: var(--black-color);
     padding: .5rem;
     transition: border .4s, color .4s;
+    border-radius: 0.4rem; /* added by me */
 }
 
 .button__ghost i{
