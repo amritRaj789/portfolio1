@@ -334,6 +334,7 @@ body.dark-theme{
     row-gap: 2.5rem;
 }
 
+
 .nav__link{
     position: relative;
     color: var(--text-color-light);
@@ -341,6 +342,10 @@ body.dark-theme{
     font-weight: var(--font-semi-bold);
     transition: color .3s;
 }   
+
+.nav__link-button{
+    border-radius: 0.8rem;
+}
 
 .nav__link::after{
     content: '';
